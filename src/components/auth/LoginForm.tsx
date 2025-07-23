@@ -13,7 +13,6 @@ export const LoginForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    setError('')
     if (!email || !password) return
 
     try {
