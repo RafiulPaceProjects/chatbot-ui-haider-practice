@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { useChat } from '../../contexts/ChatContext'
 import { Button } from '../ui/Button'
 import { Textarea } from '../ui/Textarea'
-import { IconSend, IconStop, IconPaperclip } from '@tabler/icons-react'
+import { IconSend, IconPlayerStop, IconPaperclip } from '@tabler/icons-react'
 
 export const ChatInput: React.FC = () => {
   const { sendMessage, isStreaming, stopStreaming } = useChat()
@@ -87,7 +87,7 @@ export const ChatInput: React.FC = () => {
                   className="text-red-500 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20"
                   aria-label="Stop generating response"
                 >
-                  <IconStop className="h-4 w-4" />
+                  <IconPlayerStop className="h-4 w-4" />
                 </Button>
               ) : (
                 <Button
