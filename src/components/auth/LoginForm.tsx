@@ -18,16 +18,6 @@ export const LoginForm: React.FC = () => {
     try {
       await login({ email, password })
     } catch (err) {
-      const errorMessage = (error as Error).message
-      
-      // Provide user-friendly error messages
-      if (errorMessage.includes('Cannot connect to backend')) {
-        setError('Cannot connect to server. Please check if your backend is running.')
-      } else if (errorMessage.includes('not configured')) {
-        setError('Backend not configured. Please set up your environment variables.')
-      } else {
-        setError(errorMessage)
-      }
       console.error('Login failed:', err)
     }
   }
