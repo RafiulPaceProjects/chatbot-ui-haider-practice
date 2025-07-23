@@ -33,7 +33,7 @@ VITE_APP_NAME=My LangChain App`
               Configuration Required
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              Please configure your LangChain backend URL to get started
+              Please configure your LangChain backend URL and ensure your backend server is running.
             </p>
           </div>
         </div>
@@ -46,8 +46,16 @@ VITE_APP_NAME=My LangChain App`
             <ol className="list-decimal list-inside space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li>Create a <code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">.env.local</code> file in your project root</li>
               <li>Add your LangChain backend URL</li>
-              <li>Restart the development server</li>
+              <li>3. Start your LangChain backend server</li>
+              <li>4. Restart the development server</li>
             </ol>
+          </div>
+
+          <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 text-left">
+            <h3 className="font-medium text-blue-900 dark:text-blue-100 mb-2">Default Backend URL:</h3>
+            <p className="text-sm text-blue-700 dark:text-blue-300">
+              The frontend expects your backend at <code className="bg-blue-100 dark:bg-blue-800 px-1 rounded">http://localhost:8000</code>
+            </p>
           </div>
 
           <div>
